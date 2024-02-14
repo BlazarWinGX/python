@@ -1,2 +1,2 @@
 # python
-python.py amd all.
+python.py and all.
