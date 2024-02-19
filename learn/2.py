@@ -5,6 +5,7 @@ message="hello python crash course world!"
 print(message) #hello python crash course world!
 mesage="hello python crash course world!"
 print(mesage) #hello python crash course world!
+
 # 2.3 字符串（string）
 'This is a string.'
 "This is a string."
@@ -69,6 +70,7 @@ print("Languages:\n\tpython\n\tc\n\tJavascript") #Languages:
 message = "One of python's strengths is its diverse community."
   # message = 'One of python's strengths is its diverse community.'# 输出中包含'使用""避免语法错误
 print(message)
+
 # 2.4 数
 print(2+3) #5 加   
 print(5-3) #2 减
@@ -94,7 +96,9 @@ print(x+y+z) #6
 # 2.4.6 常量constant
 MAX_CONNECTIONS = 5000
 print(MAX_CONNECTIONS) #5000 全大写将变量视为常量
+
 # 2.5 注释(#)
 #略
+
 # 2.6 python之禅
 import this 
