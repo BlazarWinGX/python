@@ -70,3 +70,29 @@ too_expensive = 'ducati'
 motorcycles.remove(too_expensive) 
 print(motorcycles) #['honda', 'yamaha', 'suzuki']
 print(f"\nA {too_expensive.title()} is too expensive for me.") #A Ducati is too expensive for me.
+# 3.3 管理列表
+#3.3.1 使用sort()方法对列表进行永久排序
+cars = ['bmw','aydi','toyota','subaru']
+cars.sort() #列表按字母顺序排序
+print(cars) #['aydi', 'bmw', 'subaru', 'toyota']
+
+cars = ['bmw','aydi','toyota','subaru']
+cars.sort(reverse=True) #列表按字母倒序排序
+print(cars) #['toyota', 'subaru', 'bmw', 'aydi']
+# 3.3.2 使用sorted()函数对列表进行临时排序
+cars = ['bmw','aydi','toyota','subaru']
+print("Here is the original list:") #Here is the original list:
+print(cars) #['bmw', 'aydi', 'toyota', 'subaru']
+print("\nHere is the sorted list:") #Here is the sorted list:
+print(sorted(cars)) #['aydi', 'bmw', 'subaru', 'toyota']
+print("\nHere is the original list again:") #Here is the original list again:
+print(cars) #['bmw', 'aydi', 'toyota', 'subaru']
+# 3.3.3 反向打印列表
+cars = ['bmw','aydi','toyota','subaru']
+print(cars) #['bmw', 'aydi', 'toyota', 'subaru']
+cars.reverse()
+print(cars) #['subaru', 'toyota', 'aydi', 'bmw']
+# 3.3.4 确定列表长度
+cars = ['bmw','aydi','toyota','subaru']
+print(len(cars)) #4
+# 3.4 使用列表时避免索引错误
