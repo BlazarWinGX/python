@@ -1,4 +1,5 @@
 # 三、列表简介
+
 # 3.1 列表是什么 #列表(list [])
 bicycles =['trek','cannondale','redline','specialized']
 print(bicycles) #['trek', 'cannondale', 'redline', 'specialized']
@@ -17,6 +18,7 @@ print(bicycles[-3]) #cannondale #返回倒数第三个元素
 bicycles =['trek','cannondale','redline','specialized']
 message = f"My first bicycle was a {bicycles[0].title()}." 
 print(message) #My first bicycle was a Trek.
+
 # 3.2 修改、添加和删除元素
 # 3.2.1 修改列表元素
 motorcycles = ['honda','yamaha','suzuki']
@@ -70,6 +72,7 @@ too_expensive = 'ducati'
 motorcycles.remove(too_expensive) 
 print(motorcycles) #['honda', 'yamaha', 'suzuki']
 print(f"\nA {too_expensive.title()} is too expensive for me.") #A Ducati is too expensive for me.
+
 # 3.3 管理列表
 #3.3.1 使用sort()方法对列表进行永久排序
 cars = ['bmw','aydi','toyota','subaru']
@@ -95,4 +98,5 @@ print(cars) #['subaru', 'toyota', 'aydi', 'bmw']
 # 3.3.4 确定列表长度
 cars = ['bmw','aydi','toyota','subaru']
 print(len(cars)) #4
+
 # 3.4 使用列表时避免索引错误
