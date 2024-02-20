@@ -121,3 +121,42 @@ print("My favorite foods are:") #My favorite foods are:
 print(my_foods) #['pizza', 'falafel', 'carrot cake', 'cannoli']
 print("\nMy friend's favorite foods are:") #My friend's favorite foods are:
 print(friend_foods) #['pizza', 'falafel', 'carrot cake', 'ice cream']
+
+# 4.5 元组(tuple)
+# 4.5.1 定义元组
+dimensions = (200,50)
+#dimensions[0] = 250 #此处错误，python不能给元组赋值
+print(dimensions[0]) #200
+print(dimensions[1]) #50
+#严格的说，元组是由逗号标识的，园括号只是让元组看起来更清晰整洁
+#若只定义一个元组，在元素后必须加逗号
+my_t = (3,)
+# 4.5.2 遍历元组中的所有值
+dimensions = (200,50)
+for dimension in dimensions:
+    print(dimension) #200
+                     #50
+# 4.5.3 修改元组变量
+dimensions = (200,50)
+print("Original dimensions:") #Original dimensions:
+for dimension in dimensions:
+    print(dimension) #200
+                     #50
+
+dimensions = (400,100)
+print("\nModified dimenssions:") #Modified dimenssions:
+for dimension in dimensions:
+    print(dimension) #400
+                     #100
+
+# 4.6 设置代码格式
+# 4.6.1 格式设置指南
+  #Pytnon增强提案(Pytnon Enhancement Proposal,PEP)
+# 4.6.2 缩进
+  #PEP8建议每级缩进都使用4个空格
+# 4.6.3 行长
+  #每行不超过80个字符
+# 4.6.4 空行
+  #将程序不同部分分开，可使用空行
+# 4.6.5 其他1格式设置指南
+  #详见PEP8
