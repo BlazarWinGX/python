@@ -1,4 +1,4 @@
-# 第一章 起步
+# 第1章 起步
 
 # 1.1 hello python world!
 print('hello world!') #hello world!
