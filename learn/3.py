@@ -1,4 +1,4 @@
-# 第三章 列表简介
+# 第3章 列表简介
 
 # 3.1 列表是什么 #列表(list [])
 bicycles =['trek','cannondale','redline','specialized']
