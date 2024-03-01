@@ -1,4 +1,4 @@
-# 第二章 变量和简单的数据类型
+# 第2章 变量和简单的数据类型
 
 # 2.2 变量（variable）
 message="hello python world!"
