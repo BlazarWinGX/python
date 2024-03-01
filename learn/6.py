@@ -268,3 +268,68 @@ print(...)
 #{'color': 'yellow', 'points': 5, 'speed': 'slow'}
 #{'color': 'yellow', 'points': 5, 'speed': 'slow'}
 #Ellipsis
+# 6.4.2 在字典中存储列表
+# 存储顾客所点披萨的信息
+pizza = {
+    'crust': 'think',
+    'toppings': ['mushrooms','exrtra cheese']
+}
+# 概述顾客点的披萨
+print(f"You ordered a {pizza['crust']}-crust pizza "
+      "with the following toppings:")
+for topping in pizza ['toppings']:
+    print(f"\t{topping}")
+    #You ordered a think-crust pizza with the following toppings:
+         #mushrooms
+         #exrtra cheese
+
+favorite_languages = {
+    'jen': ['python','rust'],
+    'sarah': ['c'],
+    'edward': ['rust','go'],
+    'phil': ['python','haskell'],
+}
+for name, languages in favorite_languages.items():
+    print(f"\n{name.title()}'s favorite languages are:")
+    for language in languages:
+        print(f"\t{language.title()}")
+        #Jen's favorite languages are:
+            #Python
+            #Rust
+
+        #Sarah's favorite languages are:
+            #C
+
+        #Edward's favorite languages are:
+            #Rust
+            #Go
+
+        #Phil's favorite languages are:
+            #Python
+            #Haskell
+# 6.4.3 在字典中存储字典
+users = {
+    'aeinstein': {
+        'first': 'albert',
+        'last': 'einstein',
+        'location': 'princeton',
+    },
+    'mcurie': {
+       'first': 'marie',
+        'last': 'curie',
+        'location': 'paris', 
+    },
+}
+for username, user_info in users.items():
+    print(f"\nUsername: {username}")
+    full_name = f"{user_info['first']} {user_info['last']}"
+    location = user_info['location']
+    print(f"\tFull name: {full_name.title()}")
+    print(f"\tLocation: {location.title()}")\
+    #Username: aeinstein
+        #Full name: Albert Einstein
+        #Location: Princeton
+
+    #Username: mcurie
+        #Full name: Marie Curie
+        #Location: Paris
