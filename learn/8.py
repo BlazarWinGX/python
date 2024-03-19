@@ -66,3 +66,91 @@ describe_pet('harry','hamster')
 describe_pet(pet_name='harry',animal_type='hamster')
 describe_pet(animal_type='hamster',pet_name='harry')           
 # 8.2.5 避免实参错误
+
+# 8.3 返回值
+# 8.3.1 返回简单值
+def get_formatted_name(first_name,last_name):
+    """返回标准格式的姓名"""
+    full_name = f"{first_name} {last_name}"
+    return full_name.title()
+musician = get_formatted_name('jimi','hendrix')
+print(musician)
+#Jimi Hendrix
+# 8.3.2 让实参变成可选的
+def get_formatted_name(first_name,middle_name,last_name):
+    """返回标准格式的姓名"""
+    full_name = f"{first_name} {middle_name} {last_name}"
+    return full_name.title()
+musician = get_formatted_name('john','lee','hooker')
+print(musician)
+#John Lee Hooker
+
+def get_formatted_name(first_name,middle_name,last_name=''):
+    """返回标准格式的姓名"""
+    if middle_name:
+        full_name = f"{first_name} {middle_name} {last_name}"
+    else:
+        full_name = f"{first_name} {last_name}"
+    return full_name.title()
+musician = get_formatted_name('jimi','hendrix')
+print(musician)
+musician = get_formatted_name('john','lee','hooker')
+print(musician)
+#Jimi Hendrix 
+#ohn Lee Hooker
+
+# 8.3.3 返回字典
+def build_person(first_name,last_name):
+    """返回一个字典，其中包含有关一个人的信息"""
+    person = {'first': first_name,'last': last_name}
+    return person
+musician = build_person('jimi','hendrix')
+print(musician)
+#{'first': 'jimi', 'last': 'hendrix'}
+def build_person(first_name,last_name,age=None):
+    """返回一个字典，其中包含有关一个人的"""
+    person = {'first': first_name,'last': last_name}
+    if age:
+        person['age'] = age
+    return person
+musician = build_person('jimi','hendrix', age=27)
+print(musician)
+#{'first': 'jimi', 'last': 'hendrix', 'age': 27}
+# 8.3.4 结合使用函数和while循环
+def get_formatted_name(first_name,last_name):
+    """返回规范格式的姓名"""
+    full_name = f"{first_name} {last_name}"
+    return full_name.title()
+while True:
+    print("\nPlease tell me your name:")
+    print("(enter 'q' at any time to quit)")
+    f_name = input("First name: ")
+    if f_name == 'q':
+        break
+    l_name = input("Last name:")
+    if l_name == 'q':
+        break
+formatted_name = get_formatted_name(f_name, l_name)
+print(f"\nHello, {formatted_name}!")
+#Please tell me your name:
+#(enter 'q' at any time to quit)
+#First name: eric
+#Last name:matthes
+
+#Please tell me your name:
+#(enter 'q' at any time to quit)
+#First name: q
+
+#Hello, Q Matthes!
+
+# 8.4 传递列表
+def green_users(names):
+    """向列表中每个用户发出简单的问候"""
+    for name in names:
+        msg = f"Hello, {name.title()}"
+        print(msg)
+usernames = ['hannah','ty','margot']
+green_users(usernames)
+#Hello, Hannah!
+#Hello, Ty!
+#Hello, Margot!
